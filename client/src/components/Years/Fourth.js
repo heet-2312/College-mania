@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Streams from './Streams';
 const Fourth=()=>{
     return(
         <div>
-            Fourth Year
+            <Streams/>
         </div>
     )
 }

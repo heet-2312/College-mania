@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Streams from './Streams';
 const Second=()=>{
     return(
         <div>
-            Second Year
+            <Streams/>
         </div>
     )
 }
