@@ -12,17 +12,17 @@ import './style.css';
 const Header = () => {
     return (
         <Router>
-            <div>
-                <nav>
-                    <div>
+            <div >
+                <nav >
+                    <div >
                     <ul>
                         <li className="ss" style={{ padding: 10 }}><Link to="/">Poll</Link></li>
                         <li className="ss" style={{ padding: 10 }}><Link to="/first">First</Link></li>
                         <li className="ss" style={{ padding: 10 }}><Link to="/second">Second</Link></li>
                         <li className="ss" style={{ padding: 10 }}><Link to="/third">Third</Link></li>
                         <li className="ss" style={{ padding: 10 }}><Link to="/fourth">Fourth</Link></li>
-                        <li style={{ padding: 10 }}><Link to="/login">Login</Link></li>
-                        <li style={{ padding: 10 }}><Link to="/signup">SignUp</Link></li>
+                        <li style={{ padding: 10 }}><Link className="nav-link" to="/login">Login</Link></li>
+                        <li style={{ padding: 10 }}><Link className="nav-link" to="/signup">SignUp</Link></li>
                     </ul>
                     </div>
                 </nav>
