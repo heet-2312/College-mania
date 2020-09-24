@@ -26,3 +26,23 @@ ul {
   padding: 2px 5px;
   text-decoration: none;
 }
+.heading{
+  text-align:center;
+}
+.Card{
+  display: inline-block;
+  max-width: 20%; 
+  max-height: 20%
+}
+.Cards{
+  overflow: hidden;
+   display: flex; 
+   justify-content:space-around;
+}
+.sell{
+  margin:auto;
+  font-size: 40px;
+}
+.wrapper {
+  text-align: center;
+}
