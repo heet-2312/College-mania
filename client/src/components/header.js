@@ -7,7 +7,7 @@ import First from './Years/First';
 import Second from './Years/Second';
 import Third from './Years/Third';
 import Fourth from './Years/Fourth';
-import BuySell from './BuySell';
+import BuySell from './Buy&Sell/BuySell';
 import './style.css';
 const Header = () => {
     return (
