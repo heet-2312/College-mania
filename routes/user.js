@@ -7,7 +7,7 @@ const checkAuth=require('../middleware/auth');
 const jwt=require('jsonwebtoken');
 
 
-router.post("/signup",checkAuth, (req, res, next) => {
+router.post("/signup", (req, res, next) => {
     User.find({ email: req.body.email })
         .exec()
         .then(user => {
@@ -47,7 +47,7 @@ router.post("/signup",checkAuth, (req, res, next) => {
         })
 })
 
-router.post('/login',checkAuth, (req, res, next) => {
+router.post('/login', (req, res, next) => {
     User.find({email:req.body.email}).exec()
         .then(user => {
             if (user.length < 1) {

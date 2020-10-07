@@ -4,10 +4,10 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 var mongoose=require('mongoose');
 mongoose.set("useUnifiedTopology",true);
-var mongoDB='mongodb+srv://heet_2312:'+process.env.MONGO_ATLAS_PW+ '@cluster0.rs8g5.mongodb.net/<dbname>?retryWrites=true&w=majority';
+var mongoDB='mongodb+srv://heet:'+process.env.MONGO_ATLAS_PW+'@cluster0.rs8g5.mongodb.net/<dbname>?retryWrites=true&w=majority';
 mongoose.connect(mongoDB,{
 	useNewUrlParser:true});
-const userRoutes=require('./api/routes/user');
+const userRoutes=require('./routes/user');
 
 
 
